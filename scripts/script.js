@@ -1,5 +1,7 @@
 // Busquemos el formulario en el DOM
-let formElement = // Utiliza el método querySelector()
+let openEditButton = document.querySelector (".profile__new-form-empty")// Utiliza el método querySelector()
+
+openEditButton.addEventListener ("click", open)
 
 // Lo siguiente es el manipulador (handler) de entrega de formularios, aunque
 // no se enviará en ningún sitio todavía
@@ -28,3 +30,4 @@ function handleProfileFormSubmit(evt) {
 // Conecta el manipulador (handler) al formulario:
 // se observará el evento de entrega
 formElement.addEventListener('submit', handleProfileFormSubmit);
+
