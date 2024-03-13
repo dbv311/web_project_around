@@ -3,8 +3,8 @@ const openProfileButton = document.querySelector("#addbutton");
 const popupProfile = document.querySelector(".popup__new-profile");
 const popupPlace = document.querySelector(".popup__new-place");
 
-const closeEditButton = document.querySelector("#closeicon");
-const popupCloseIcon = document.querySelectorAll(".popup__close-icon");
+const closeEditButton = Arraydocument.querySelector("#closeicon");
+const popupCloseIcon = document.querySelector(".popup__close-icon");
 
 openEditButton.addEventListener("click", function () {
   popupProfile.classList.add("popup_open");
@@ -15,12 +15,16 @@ openProfileButton.addEventListener("click", function () {
 });
 
 closeEditButton.addEventListener("click", function () {
-  popupProfile.remove("popup_open");
+  popupProfile.classList.remove("popup_open");
+  popupPlace.classList.remove("popup_open");
 });
 
-closeEditButton.addEventListener("click", function () {
-  popupPlace.remove("popup_open");
+console.log(closeEditButton);
+
+/*closeEditButton.addEventListener("click", function () {
+
 });
+
 
 /*
 // Lo siguiente es el manipulador (handler) de entrega de formularios, aunque
