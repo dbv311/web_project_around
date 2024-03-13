@@ -75,15 +75,27 @@
   .profile {
     display: flex;
     flex-direction: column;
+    max-height: none;
   }
 
   .profile__avatar {
-    width: max-content;
+    display: flex;
+    margin: auto;
   }
 
   .profile__info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
+  }
+
+  .profile__add-button {
+    width: 260px;
+    margin: auto;
+  }
+
+  .profile__title {
+    font-size: 30px;
   }
 }

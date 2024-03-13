@@ -9,5 +9,6 @@
   .elements {
     min-width: 282px;
     width: 100%;
+    justify-content: center;
   }
 }
