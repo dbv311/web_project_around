@@ -3,6 +3,7 @@ const openProfileButton = document.querySelector("#addbutton");
 const popupProfile = document.querySelector(".popup__new-profile");
 const popupPlace = document.querySelector(".popup__new-place");
 const popupCloseIcon = document.querySelectorAll(".popup__close-icon");
+/*const formElement = document.querySelector(".popup__container");*/
 
 openEditButton.addEventListener("click", function () {
   popupProfile.classList.add("popup_open");
@@ -20,30 +21,20 @@ popupCloseIcon.forEach((item) => {
 });
 
 /*
-// Lo siguiente es el manipulador (handler) de entrega de formularios, aunque
-// no se enviará en ningún sitio todavía
-
-// Observa que el nombre de la función comienza con un verbo
-// y describe exactamente lo que hace la función
 function handleProfileFormSubmit(evt) {
-  // Esta línea impide que el navegador
-  // entregue el formulario en su forma predeterminada.
   evt.preventDefault();
-  // Una vez hecho esto, podemos definir nuestra propia forma de entregar el formulario.
-  // Lo explicaremos todo con más detalle después.
 
-  // Busquemos los campos del formulario en el DOM
-  let nameInput = // Utiliza el método querySelector()
-  let jobInput = // Utiliza el método querySelector()
+  let profileText = document.querySelector(".profile__text");
+  let profileTitle = document.querySelector(".profile__title");
 
-  // Obtén los valores de cada campo desde la propiedad de valor correspondiente
+  /*let nameInput = formElement.querySelector(".popup__input-name");
+  let aboutMeInput = formElement.querySelector(".popup__input-about");
 
-  // Selecciona los elementos donde se introducirán los valores de los campos
-
-  // Inserta nuevos valores utilizando el textContent
-  // propiedad del método querySelector()
+  aboutMeInput.value = profileText.textContent;
+  nameInput.value = profileTitle.textContent;
 }
 
-// Conecta el manipulador (handler) al formulario:
-// se observará el evento de entrega
-formElement.addEventListener('submit', handleProfileFormSubmit); */
+profileText.value = "";
+aboutMeInput.value = "";
+
+formElement.addEventListener("submit", handleProfileFormSubmit);*/
