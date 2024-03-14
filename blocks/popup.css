@@ -63,10 +63,14 @@
   line-height: 1.5;
   letter-spacing: 0em;
   text-align: left;
-  color: #c4c4c4;
+  color: black;
   border: none;
   width: 358px;
   display: flex;
+}
+
+.popup__input::placeholder {
+  color: #c4c4c4;
 }
 
 .popup__input-name {
