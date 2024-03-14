@@ -115,16 +115,14 @@
     letter-spacing: 0em;
     text-align: left;
     color: black;
+    width: 238px;
+    margin: 25px 22px 76px;
   }
 
   .popup__add {
     width: 282px;
   }
 
-  .popup__edit {
-    width: 238px;
-    margin: 25px 22px 76px;
-  }
   .popup__input {
     width: 238px;
     margin: 0 22px 30px;
@@ -135,7 +133,7 @@
     margin: 16px 22px 25px;
   }
 
-  .popup__icon {
+  .popup__close-icon {
     right: -5px;
   }
 }
