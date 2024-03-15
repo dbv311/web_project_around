@@ -56,6 +56,9 @@
   letter-spacing: 0em;
   text-align: center;
   color: black;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .element__button-like {

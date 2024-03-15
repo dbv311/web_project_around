@@ -76,11 +76,17 @@
 .popup__input-name {
   margin: 54px 36px 0;
   border-bottom: 1px solid #c4c4c4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .popup__input-about {
   margin: 29.74px 36px 48px;
   border-bottom: 1px solid #c4c4c4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .popup__button {
