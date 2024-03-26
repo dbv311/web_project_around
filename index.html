@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Ciudades, explorando" />
-    <meta
-      name="keywords"
-      content="Ciudades alrededor del mundo, tripleten, js"
-    />
+    <meta name="keywords" content="Sur de Chile, tripleten, js" />
     <meta name="author" content="Daniela Bohorquez" />
-    <title>Alrededor del mundo con tripleten</title>
+    <title>Sur de Chile con tripleten</title>
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="body">
@@ -38,147 +35,7 @@
           </div>
           <button class="profile__add-button" id="addbutton"></button>
         </section>
-        <section class="elements">
-          <div class="element">
-            <div class="element__overlay"></div>
-            <div class="element__picture">
-              <img
-                src="./images/torres_del_paine.jpg"
-                alt="torres del paine"
-                class="element__image"
-                id="torresdelpaine"
-              />
-              <img
-                src="./images/trash.svg"
-                alt="trash button"
-                class="element__button-trash"
-              />
-            </div>
-            <div class="element__info">
-              <p class="element__text">Torres del Paine</p>
-              <img
-                src="./images/heart.svg"
-                alt="like button"
-                class="element__button-like"
-              />
-            </div>
-          </div>
-          <div class="element">
-            <div class="element__picture">
-              <img
-                src="./images/lago_grey.jpg"
-                alt="lago grey"
-                class="element__image"
-                id="lagogrey"
-              />
-              <img
-                src="./images/trash.svg"
-                alt="trash button"
-                class="element__button-trash"
-              />
-            </div>
-            <div class="element__info">
-              <p class="element__text">Lago Grey</p>
-              <img
-                src="./images/heart.svg"
-                alt="like button"
-                class="element__button-like"
-              />
-            </div>
-          </div>
-          <div class="element">
-            <div class="element__picture">
-              <img
-                src="./images/lago_pehoe.jpg"
-                alt="lago pehoe"
-                class="element__image"
-                id="lagopehoe"
-              />
-              <img
-                src="./images/trash.svg"
-                alt="trash button"
-                class="element__button-trash"
-              />
-            </div>
-            <div class="element__info">
-              <p class="element__text">Lago Pehoe</p>
-              <img
-                src="./images/heart.svg"
-                alt="like button"
-                class="element__button-like"
-              />
-            </div>
-          </div>
-          <div class="element">
-            <div class="element__picture">
-              <img
-                src="./images/muelle_viejo_puerto_natales.jpg"
-                alt="costa de puerto natales"
-                class="element__image"
-                id="puertonatales"
-              />
-              <img
-                src="./images/trash.svg"
-                alt="trash button"
-                class="element__button-trash"
-              />
-            </div>
-            <div class="element__info">
-              <p class="element__text">Puerto Natales</p>
-              <img
-                src="./images/heart.svg"
-                alt="like button"
-                class="element__button-like"
-              />
-            </div>
-          </div>
-          <div class="element">
-            <div class="element__picture">
-              <img
-                src="./images/laguna_amarga.jpg"
-                alt="laguna amarga"
-                class="element__image"
-                id="lagunaamarga"
-              />
-              <img
-                src="./images/trash.svg"
-                alt="trash button"
-                class="element__button-trash"
-              />
-            </div>
-            <div class="element__info">
-              <p class="element__text">Laguna Amarga</p>
-              <img
-                src="./images/heart.svg"
-                alt="like button"
-                class="element__button-like"
-              />
-            </div>
-          </div>
-          <div class="element">
-            <div class="element__picture">
-              <img
-                src="./images/laguna_serrano.jpg"
-                alt="laguna serrano"
-                class="element__image"
-                id="lagunaserrano"
-              />
-              <img
-                src="./images/trash.svg"
-                alt="trashbutton"
-                class="element__button-trash"
-              />
-            </div>
-            <div class="element__info">
-              <p class="element__text">Laguna Serrano</p>
-              <img
-                src="./images/heart.svg"
-                alt="like button"
-                class="element__button-like"
-              />
-            </div>
-          </div>
-        </section>
+        <section class="elements"></section>
       </main>
       <footer class="footer">&copy; 2024 Daniela Bohorquez</footer>
     </div>
@@ -222,18 +79,39 @@
           <h2 class="popup__edit">Nuevo Lugar</h2>
           <input
             type="text"
-            class="popup__input popup__input-name"
+            class="popup__input popup__input-place"
             placeholder="Titulo"
           />
           <input
             type="text"
-            class="popup__input popup__input-about"
+            class="popup__input popup__input-link"
             placeholder="Enlace a la imagen"
           />
           <button type="submit" class="popup__button">Crear</button>
         </form>
       </div>
     </div>
+    <template id="element-card">
+      <div class="element">
+        <div class="element__overlay"></div>
+        <div class="element__picture">
+          <img alt="paisajes" class="element__image" id="paisaje" />
+          <img
+            src="./images/trash.svg"
+            alt="trash button"
+            class="element__button-trash"
+          />
+        </div>
+        <div class="element__info">
+          <p class="element__text"></p>
+          <img
+            src="./images/heart.svg"
+            alt="like button"
+            class="element__button-like"
+          />
+        </div>
+      </div>
+    </template>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
