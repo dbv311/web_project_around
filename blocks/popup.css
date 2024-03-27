@@ -148,6 +148,10 @@
   text-align: left;
 }
 
+.popup_card {
+  background: none;
+}
+
 @media screen and (max-width: 767px) {
   .popup {
     min-width: 282px;
@@ -190,7 +194,7 @@
     position: relative;
   }
 
-  .popup__card {
+  .popup_card {
     background: none;
   }
 }
