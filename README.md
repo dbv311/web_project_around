@@ -2,7 +2,7 @@
 
 Link para ingreso: https://dbv311.github.io/web_project_around/
 
-Se crea una pagina web con diseño de red social
+Se crea una pagina web con diseño de red social, sobre el Sur de Chile
 
 Se emplea html, css y javascript para su funcionamiento
 
@@ -18,3 +18,6 @@ Bloques:
 -Element
 -Footer
 -Popup
+
+Se agregaron tarjetas con javascript, se activa formulario para agregar nuevas tarjetas,
+Boton de like queda funcionando, boton funcionando para eliminar tarjetas
