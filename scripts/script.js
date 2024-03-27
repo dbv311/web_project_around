@@ -79,6 +79,9 @@ function handleAddCard(evt) {
   const cardNode = createCard(placeInput.value, linkInput.value);
   elementsArea.prepend(cardNode);
   popupPlace.classList.remove("popup_open");
+
+  placeInput.value = "";
+  linkInput.value = "";
 }
 
 popupPlace.addEventListener("submit", handleAddCard);
